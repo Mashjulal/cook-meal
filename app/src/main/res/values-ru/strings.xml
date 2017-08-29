@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="recent_added_title">Недавно добавлены</string>
+    <string name="main_title">Главная</string>
+    <string name="recipe_book_title">Книга рецептов</string>
+    <string name="search_recipes_title">Найти рецепты</string>
+    <string name="create_recipe_title">Создать рецепт</string>
+    <string name="timer_title">Таймер</string>
+
+    <string name="title_add_image">Изображение</string>
+    <string name="title_add_text">Текст</string>
+    <string name="title_add_video">Видео</string>
+    <string name="title_add_timer_program">Timer Program</string>
+    <string name="title_add_ingredients">Ингредиенты</string>
+    <string name="title_cancel">Отмена</string>
+</resources>

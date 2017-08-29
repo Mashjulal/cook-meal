@@ -1,0 +1,7 @@
+TODO: recipe search: by name, by ingredients, by meal type
+TODO: recipes search on sites
+TODO: recipes search with popular search engines
+TODO: saving chosen recipe site page
+TODO: add autocomplete for ingredients
+TODO: add "on prefer" to ingredients quantity
+TODO: add dependencies of quantity edit text input type from chosen type

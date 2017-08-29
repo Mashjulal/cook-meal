@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_iRecipeStepEditCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:elevation="4dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_iRecipeStepEditCard_stepNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/iv_iRecipeStepEditCard_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tv_iRecipeStepEditCard_stepNumber"
+                android:layout_marginTop="12dp"
+                android:visibility="gone" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_iRecipeStepEditCard_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/iv_iRecipeStepEditCard_image"
+                android:layout_margin="10dp"
+                app:counterEnabled="true"
+                app:counterMaxLength="255"
+                app:errorEnabled="true"
+                app:hintAnimationEnabled="false"
+                app:hintEnabled="false">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:maxLength="255" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_iRecipeStepEditCard_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/til_iRecipeStepEditCard_description"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.05"
+                    app:srcCompat="@drawable/ic_timer" />
+
+                <TextView
+                    android:id="@+id/tv_iRecipeStepEditCard_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <ImageButton
+        android:id="@+id/ib_iRecipeStepEditCard_addImage"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentTop="false"
+        android:layout_below="@+id/cv_iRecipeStepEditCard"
+        android:layout_marginStart="70dp"
+        android:background="@color/colorPrimary"
+        android:padding="5dp"
+        app:srcCompat="@drawable/ic_image" />
+
+    <ImageButton
+        android:id="@+id/ib_iRecipeStepEditCard_addTime"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="false"
+        android:layout_below="@+id/cv_iRecipeStepEditCard"
+        android:layout_gravity="start"
+        android:layout_marginStart="20dp"
+        android:background="@android:color/holo_green_dark"
+        android:padding="5dp"
+        app:srcCompat="@drawable/ic_timer_white" />
+
+</RelativeLayout>
